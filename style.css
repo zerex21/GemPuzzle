@@ -1,0 +1,146 @@
+:root{
+    --bgcol:#37474F;
+    --mcol0:#29B6F6;
+    --mcol1:#2196F3;
+    --mcol2:#1976D2;
+    --txtcol0:#90A4AE;
+    --txtcol1:#607D8B;
+    --whitecol:#ECEFF1;
+    --darkcol:#263238;
+}
+
+
+body{
+    font-family: sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:5vh;
+    background-color:var(--bgcol);
+}
+
+.game-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 402px;
+    height: 402px;
+    margin: 0 auto;
+    border: 2px solid salmon;
+    position: relative;
+
+}
+
+.puzzle_block{
+    /* transition:left 3s,top 3s; */
+     position: absolute;
+/*     flex-wrap: wrap; */
+    display: flex;
+    left:0;
+    top:0;
+    width:100px;
+    height:100px;
+    background-color:var(--txtcol1);
+    color:var(--whitecol);
+    font-size:20px;
+    font-weight:bold;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #123150;
+}
+
+.frame-size{
+    padding-top: 10px;
+    font-size: calc(15px + (1 + 1 * 0.1) * ((100vw - 320px) / 1280));
+    color: antiquewhite;
+}
+
+.container-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons{
+    font-size: calc(15px + (1 + 1 * 0.1) * ((100vw - 320px) / 1280));
+    font-weight: 600;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    border: none;
+    background: #25aae7;
+    color: #022f3a;
+    cursor: pointer;
+}
+/* .buttons:hover{
+    cursor: pointer;
+    background: #138ac2;
+} */
+
+.buttonsToggle{
+    background: #123150;
+    color: #ECEFF1;
+}
+
+.container-buttons .buttons:nth-child(5){
+    margin-right: 0px;
+}
+
+.container-size{
+    display: flex;
+}
+
+.container-size{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    color:antiquewhite;
+    font-size: calc(13px + (1 + 1 * 0.1) * ((100vw - 320px) / 1280));
+    justify-content: center;
+}
+
+.size{
+    margin-right: 10px;
+
+}
+
+.size:hover{
+    cursor: pointer;
+}
+
+.sizeToggle{
+    text-decoration: underline;
+    color: #8f9192;
+}
+
+.container-size .size:nth-child(1){
+    margin-left: 10px;
+}
+
+.container-size .size:nth-child(6){
+  margin-right: 0px;
+}
+
+.container-info{
+    display: flex;
+    flex-wrap: wrap;
+    color:antiquewhite;
+    font-size: calc(20px + (1 + 1 * 0.1) * ((100vw - 320px) / 1280));
+}
+
+.info{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.winnerList{
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    background: #263238;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
